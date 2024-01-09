@@ -126,6 +126,12 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &331594997 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7219063305458148608, guid: f8760d1280df04b4f828142f04ebfc5a,
+    type: 3}
+  m_PrefabInstance: {fileID: 7219063303475666043}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &542508511
 GameObject:
   m_ObjectHideFlags: 0
@@ -693,6 +699,7 @@ GameObject:
   - component: {fileID: 1353549113}
   - component: {fileID: 1353549112}
   - component: {fileID: 1353549111}
+  - component: {fileID: 1353549115}
   m_Layer: 0
   m_Name: PressurePlate
   m_TagString: Untagged
@@ -708,11 +715,11 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1353549110}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0.00000023841858}
+  m_Size: {x: 1, y: 23.173445, z: 1}
+  m_Center: {x: 0, y: 11.086723, z: 0.00000021920886}
 --- !u!23 &1353549112
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -771,13 +778,27 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1353549110}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.56183267, y: -0.55, z: 0.2}
+  m_LocalPosition: {x: -2.59, y: -0.55, z: 0.23}
   m_LocalScale: {x: 3.1125, y: 0.0815475, z: 2.71908}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1550757101}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1353549115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1353549110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b9e28cf55150454e9d22f0db35763b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nombreRandom: 177
+  door: {fileID: 331594997}
 --- !u!1 &1496720389 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9005220659476430823, guid: 2d3a85ecde41a8246a79669975912b74,
@@ -1685,6 +1706,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Door
+      objectReference: {fileID: 0}
+    - target: {fileID: 7219063305458148608, guid: f8760d1280df04b4f828142f04ebfc5a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7219063305458148615, guid: f8760d1280df04b4f828142f04ebfc5a,
         type: 3}

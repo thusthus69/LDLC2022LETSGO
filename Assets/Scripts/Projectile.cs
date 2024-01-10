@@ -34,6 +34,7 @@ public class Projectile : MonoBehaviour
         {
             renderer.material.color = Random.ColorHSV();
             audioSource.Play();
+            audioSource.pitch = Random.Range(0.1f, 3f);
         } 
     }
 

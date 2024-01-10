@@ -5,12 +5,14 @@ using UnityEngine;
 public class Projectile : MonoBehaviour
 {
     
+    AudioSource audioSource;
     Rigidbody rigidbody;
     [SerializeField] float speed = 5f;
     [SerializeField] float lifetime = 5f;
 
     void Start()
     {
+        audioSource = GetComponent<AudioSource>();
         rigidbody = GetComponent<Rigidbody>();
         Invoke("Destruction", lifetime);
     }
@@ -31,6 +33,7 @@ public class Projectile : MonoBehaviour
         if(renderer != null)
         {
             renderer.material.color = Random.ColorHSV();
+            audioSource.Play();
         } 
     }
 

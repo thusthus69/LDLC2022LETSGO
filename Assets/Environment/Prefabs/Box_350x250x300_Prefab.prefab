@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 4422386835124225496}
   - component: {fileID: 3620356314442491057}
   - component: {fileID: -7143014498168305730}
-  - component: {fileID: 8639015706244766565}
   m_Layer: 0
   m_Name: Box_350x250x300_Prefab
   m_TagString: Untagged
@@ -134,15 +133,3 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &8639015706244766565
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2765075023489016845}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 19990fc4a98c3bd4b85c4e84faf0ad61, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
